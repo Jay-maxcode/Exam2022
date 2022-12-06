@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazzling</title>
+    <link rel="stylesheet" href="me.css">
+    <script src="https://kit.fontawesome.com/9154a99d50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Dazzling Demo
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Shortcodes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Language</a></li>
+            
+        </ul>
+    </div>
+    <div class="imageslide">
+        <img class="mySlides" src="./bryce-canyon-national-park-utah-og65szdkmzy9ko9o.jpg">
+        <img class="mySlides" src="./colorado-river-grand-canyon-7n2eaxhba3qb90bd.jpg">
+        <img class="mySlides" src="./highway-to-grand-canyon-g7sbf7htsrnqbx0r.jpg">
+        <img class="mySlides" src="./taroko-national-park-canyon-taiwan-g268iggtr94zxe2r.jpg">
+        <button class="displayleft" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="displayright" onclick="plusDivs(+1)">&#10095;</button>
+        <div class="note">
+            <h1>
+                Markup: HTML Tags and Formatting
+          </h1>
+          <p>      Headings Header one Header two Header three Header four Header five Header six Blockquotes Single line blockquote: Stay hungry. Stay foolish. Multi line blockquote with a cite reference: People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to […</p>
+        </div>
+    </div>
+    <div class="dsec">
+        <h2>Do you like this awesome and free WordPress WooCommerce theme?</h2>
+        <a href="#"> Download Now</a>
+    </div>
+
+    <div class="imginfo">
+        <div class="detail">
+            <h1>Template: Sticky
+            </h1>
+            <p><i  class="fa">&#xf073;</i>January 7, 2015  <i class="fa">&#xf07c;</i>Uncategorized</p><br>
+            <hr>
+            <div class="info">
+                <img src="./african-silhouette-sunset-art-2eyn4ors0zatjhyh.jpg" alt="image">
+                <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the very top […]</p>
+                <a href="#"> Continue Reading <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+      <hr>
+       
+        <div class="detail">
+            <h1>
+                Bullet Point Test
+            </h1>
+            <p><i  class="fa">&#xf073;</i> 2015 May 30, 2014 <i class="fa">&#xf086;</i> 6 Comments <i  class="fa">&#xf07c;</i>Uncategorized</p><br>
+            <hr>
+            <div class="info">
+                <img src="./african-afro-girl-art-eeumc5pafx4l78tl.jpg" alt="image">
+                <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the very top […]</p>
+                <a href="#"> Continue Reading <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="detail">
+            <h1>
+                Untitled
+            </h1>
+            <p><i  class="fa">&#xf073;</i> March 30, 2014 <i class="fa">&#xf07c;</i>Edge Case</p><br>
+            <hr> 
+            <div class="info">
+                <img src="./4k-programming-write-code-p3s787da7mmqpbrr.jpg" alt="image">
+                <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the very top […]</p>
+                <a href="#"> Continue Reading <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="detail">
+            <h1>
+                Hello world!
+            </h1>
+            <p><i  class="fa">&#xf073;</i> February 28, 2014 <i class="fa">&#xf086;</i> 6 Comments <i  class="fa">&#xf07c;</i>Uncategorized</p><br>
+            <hr>
+            <div class="info">
+                <img src="./programming-hd-wallpaper-and-background-image-wrgyvv74hgzn7gim.jpg" alt="image">
+                <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the very top […]</p>
+                <a href="#"> Continue Reading <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="acertain">
+            <div class="topnav">
+                <input type="text" placeholder="Search..">
+            </div>
+           
+            <div class="links">
+                <ul>
+                    <li><a href="#">Popular</a> </li>
+                    <li><a href="#">RECENT</a> </li>
+                    <li><a href="#"><i class="fa">&#xf086;</i></a> </li>
+                  
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+    </script>
+</body>
+</html>
